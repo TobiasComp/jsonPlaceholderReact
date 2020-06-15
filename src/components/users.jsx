@@ -12,7 +12,7 @@ class Users extends Component {
         axios.get(server + "users")
             .then(data => {
                 const users = data.data;
-                console.log("this is the data", users);
+                // console.log("this is the data", users);
 
                 this.setState({ users })
             })

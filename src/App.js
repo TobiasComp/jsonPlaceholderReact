@@ -6,6 +6,7 @@ import Users from './components/users';
 import UserDetail from './components/userDetail';
 import PageNotFound from './components/pageNotFound';
 import Todos from './components/todos';
+import TodoDetail from './components/todoDetail';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
 
           <Route path="/users/:id" component={UserDetail} />
           <Route path="/users" component={Users} />
-          {/* <Route path="/todos/:id" component={TodoDetail} /> */}
+          <Route path="/todos/:id" component={TodoDetail} />
           <Route path="/todos" component={Todos} />
           <Route path="/not-found" component={PageNotFound} />
           <Route path="/" exact component={Users} />
